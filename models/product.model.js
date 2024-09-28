@@ -39,7 +39,7 @@ const Product = sequelize.define("product", {
     },
     imageUrl: { // Add this field
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: false,
     },
 });
 
