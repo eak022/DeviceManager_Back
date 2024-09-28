@@ -6,8 +6,10 @@ const cors = require("cors");
 const productRouter = require("./routers/product.router");
 const authRouter = require("./routers/auth.router")
 const corsOption = {
-    origin: "http://localhost:5173",
+    origin: ['https://device-manager-front-yaqw.vercel.app', 'http://localhost:5173'], // อนุญาตหลาย origin
+    credentials: true, // หากใช้ cookies หรือ tokens
 };
+
 
 //use Middleware
 app.use(cors(corsOption));
